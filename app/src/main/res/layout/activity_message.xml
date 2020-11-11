@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MessageActivity">
+
+    <LinearLayout android:id="@+id/bar_layout" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/amber_800" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_black" android:background="?selectableItemBackground" android:paddingLeft="@dimen/spacing_medium" android:paddingRight="@dimen/spacing_medium" android:clickable="true" android:layout_width="wrap_content" android:layout_height="?actionBarSize">
+            <ImageButton android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="?actionBarSize" app:srcCompat="@drawable/ic_arrow_back" />
+            <View android:layout_width="@dimen/spacing_medium" android:layout_height="0.0dip" />
+            <de.hdodenhof.circleimageview.CircleImageView  android:id="@+id/profile_image" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_launcher_foreground" app:civ_border="true" app:civ_border_color="#ff075e54" app:civ_border_width="0.0dip" app:civ_shadow="true" app:civ_shadow_radius="0.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_small" android:paddingRight="@dimen/spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roberts"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:textColor="@color/grey_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Online" />
+        </LinearLayout>
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"  android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </LinearLayout>
+
+    <!--   <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+         <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/amber_800"
+              android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+              app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:id="@+id/profile_image"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/username"
+                  android:textSize="18sp"
+                  android:layout_marginLeft="25dp"
+                  android:textColor="@color/quantum_black_100"
+                  android:textStyle="bold"
+                  android:layout_marginStart="25dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout> -->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="?attr/actionBarSize"-->
+<!--        android:layout_alignParentTop="true">-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/bar_layout"
+        app:stackFromEnd="true"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_above="@id/bottom"/>
+
+<!--    </ScrollView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/bottom"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+     <!--   <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:id="@+id/imgmsg"></Button>
+-->
+   <!--     <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_send"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_centerVertical="true"/> -->
+
+     <!--   <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_action_name"
+            android:id="@+id/btn_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" /> -->
+
+
+        <LinearLayout android:id="@+id/messageActivity_txt_box" android:orientation="horizontal" android:padding="@dimen/spacing_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:layout_weight="1.0" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="18.0dip" app:cardElevation="1.0dip">
+                <LinearLayout android:scrollbars="vertical"  android:orientation="horizontal" android:paddingLeft="@dimen/spacing_small" android:paddingRight="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                  <!--  <ImageView  android:background="?selectableItemBackground" android:padding="@dimen/spacing_middle" android:clickable="true" android:layout_width="@dimen/spacing_xmlarge" android:layout_height="@dimen/spacing_xmlarge" android:tint="#ff00897b" app:srcCompat="@drawable/ic_sentiment_satisfied" /> -->
+                    <EditText  android:scrollbars="vertical"  android:maxLines="7" android:maxHeight="7dp"  android:id="@+id/text_send" android:background="@android:color/transparent" android:padding="@dimen/spacing_middle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Write a message..." android:layout_weight="1.0" android:imeOptions="actionSearch" />
+                    <ImageView android:id="@+id/imgmsg" android:background="?selectableItemBackground" android:padding="@dimen/spacing_middle" android:clickable="true" android:layout_width="@dimen/spacing_xmlarge" android:layout_height="@dimen/spacing_xmlarge" android:tint="@color/amber_700" app:srcCompat="@drawable/ic_photo_camera" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:gravity="center"  android:id="@+id/btn_send" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:tint="@android:color/white" app:backgroundTint="@color/amber_700" app:elevation="1.0dip" app:fabSize="mini" app:srcCompat="@drawable/ic_action_name" app:useCompatPadding="false" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

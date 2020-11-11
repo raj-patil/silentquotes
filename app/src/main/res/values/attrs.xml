@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandText" format="string" />
+        <attr name="collapseText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shadow" format="boolean" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_radius" format="dimension" />
+    </declare-styleable>
+
+    <!--   -->
+    <attr name="chipBackground" format="reference|color" />
+    <attr name="chipBackgroundColor" format="color" />
+    <attr name="chipCornerRadius" format="dimension" />
+    <attr name="chipEndPadding" format="dimension" />
+    <attr name="chipGroupStyle" format="reference" />
+    <attr name="chipHeight" format="reference|dimension" />
+    <attr name="chipIcon" format="reference" />
+    <attr name="chipIconEnabled" format="boolean" />
+    <attr name="chipIconSize" format="dimension" />
+    <attr name="chipIconTint" format="color" />
+    <attr name="chipIconVisible" format="boolean" />
+    <attr name="chipMinHeight" format="dimension" />
+    <attr name="chipSpacing" format="reference|dimension" />
+    <attr name="chipSpacingHorizontal" format="dimension" />
+    <attr name="chipSpacingVertical" format="dimension" />
+    <attr name="chipStandaloneStyle" format="reference" />
+    <attr name="chipStartPadding" format="dimension" />
+    <attr name="chipStrokeColor" format="color" />
+    <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipStyle" format="reference" />
+    <attr name="chipTextColor" format="reference|color" />
+    <attr name="chipTextSize" format="reference|dimension" />
+    <attr name="chipVerticalSpacing" format="reference|dimension" />
+    <attr name="chip_backgroundColor" format="color" />
+    <attr name="chip_deletable" format="boolean" />
+    <attr name="chip_deleteIcon" format="reference" />
+    <attr name="chip_deleteIconColor" format="color" />
+    <attr name="chip_detailed_backgroundColor" format="color" />
+    <attr name="chip_detailed_deleteIconColor" format="color" />
+    <attr name="chip_detailed_textColor" format="color" />
+    <attr name="chip_hasAvatarIcon" format="boolean" />
+    <attr name="chip_labelColor" format="color" /><attr name="mrl_rippleAlpha" format="float" />
+    <attr name="mrl_rippleBackground" format="color" />
+    <attr name="mrl_rippleColor" format="color" />
+    <attr name="mrl_rippleDelayClick" format="boolean" />
+    <attr name="mrl_rippleDimension" format="dimension" />
+    <attr name="mrl_rippleDuration" format="integer" />
+    <attr name="mrl_rippleFadeDuration" format="integer" />
+    <attr name="mrl_rippleHover" format="boolean" />
+    <attr name="mrl_rippleInAdapter" format="boolean" />
+    <attr name="mrl_rippleOverlay" format="boolean" />
+    <attr name="mrl_ripplePersistent" format="boolean" />
+    <attr name="mrl_rippleRoundedCorners" format="dimension" />
+    <attr name="mdtp_theme_dark" format="boolean" />
+
+
+
+
+
+</resources>

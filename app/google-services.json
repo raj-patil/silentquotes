@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1043647413110",
+    "firebase_url": "https://silentquot-2151.firebaseio.com",
+    "project_id": "silentquot-2151",
+    "storage_bucket": "silentquot-2151.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043647413110:android:53d12d5fb30b5407a21857",
+        "android_client_info": {
+          "package_name": "com.silentquot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043647413110-mrltbb4dafvfgihmtc4vhqmlnmi5qqg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPUuwp55qOugooDyoOOdjbbrF0AyvTu8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043647413110-mrltbb4dafvfgihmtc4vhqmlnmi5qqg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

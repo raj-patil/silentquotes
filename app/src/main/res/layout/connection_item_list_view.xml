@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/large_intrinsic_padding">
+
+    <com.silentquot.socialcomponents.views.CircularImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="@dimen/post_author_image_side"
+        android:layout_height="@dimen/post_author_image_side"
+        android:transitionName="@string/post_author_image_transition_name"
+        app:border="false"
+        app:shadow="false"
+        app:shadow_radius="@dimen/circle_image_shadow_radius"
+        tools:src="@drawable/ic_stub"
+        tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/intrinsic_padding"
+        android:layout_marginEnd="0dp"
+        android:maxLength="10"
+        android:textAppearance="@style/TextAppearance.Title"
+        tools:text="John Smith " />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/intrinsic_padding"
+        android:layout_marginStart="@dimen/intrinsic_padding">
+
+        <com.silentquot.socialcomponents.views.ConnectButton
+            android:id="@+id/connectButton"
+            style="@style/FollowButton"
+            android:layout_toRightOf="@+id/nameEditText"
+            android:visibility="gone"
+
+            tools:text="Accept"/>
+
+        <com.silentquot.socialcomponents.views.ConnectButton
+            android:id="@+id/cancelButton"
+            style="@style/FollowButton"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/connectButton"
+            tools:text="@string/CANCEL" />
+
+        <com.silentquot.socialcomponents.views.ConnectButton
+            android:id="@+id/messageButton"
+            style="@style/FollowButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/connectButton"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/intrinsic_padding"
+            tools:text="Message" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

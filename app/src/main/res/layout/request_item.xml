@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    app:rippleColor="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profile_image"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:id="@+id/username"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_toEndOf="@id/profile_image"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/quantum_white_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                android:layout_centerVertical="true"
+                android:textSize="18sp"/>
+
+             <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept "
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:id="@+id/btn_accept"
+                android:visibility="gone"
+                android:textColor="@color/quantum_white_text"
+                android:background="@drawable/request_btn">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel "
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:id="@+id/btn_cancel"
+                android:visibility="gone"
+                android:textColor="@color/quantum_white_text"
+                android:background="@drawable/request_btn">
+            </Button>
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/amber_600" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</com.balysv.materialripple.MaterialRippleLayout>

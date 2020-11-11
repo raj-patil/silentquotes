@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/amber_700"
+            android:text="Welcome to SilentQuot"
+            android:layout_marginBottom="30dp"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"></TextView>
+        <ImageView android:layout_width="220.0dip" android:layout_height="220.0dip" android:src="@drawable/img_number_verification" />
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:textStyle="bold" android:textColor="@color/grey_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verify Your Number" />
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:textColor="@color/grey_60" android:gravity="center" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:text="Please enter your mobile number to receive a verification code. Carrier rates may apply" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xlarge" android:layout_marginBottom="@dimen/spacing_large">
+            <EditText
+              android:id="@+id/verification_phone_txt_country_code"   android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:textColor="@color/grey_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+91" android:maxLines="1" android:singleLine="true" android:inputType="phone" />
+            <View android:layout_width="@dimen/spacing_medium" android:layout_height="0.0dip" />
+            <EditText  android:id="@+id/verification_phone_txt_phone_number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:textColor="@color/grey_90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="Phone Number" android:maxLines="1" android:singleLine="true" android:inputType="number">
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <Button android:id="@+id/verification_phone_btn_continue" android:textColor="@android:color/black" android:background="@drawable/btn_rounded_yellow" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="CONTINUE" />
+
+        <RelativeLayout
+            android:id="@+id/googleSignInButton"
+            android:layout_width="@dimen/base_login_button_width"
+            android:layout_height="@dimen/base_login_button_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/login_screen_button_margin"
+            android:background="@drawable/google_button_bg"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/large_intrinsic_padding"
+                android:paddingRight="@dimen/large_intrinsic_padding"
+                app:srcCompat="@drawable/ic_bt_login_google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/button_login_with_google"
+                android:textColor="@drawable/login_button_text_selector" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@color/quantum_black_100"
+    tools:context="com.silentquot.socialcomponents.main.imageDetail.ImageDetailActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <com.silentquot.socialcomponents.views.TouchImageView
+        android:id="@+id/touchImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@android:color/transparent">
+
+    </com.silentquot.socialcomponents.views.TouchImageView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/dart_transparent"></androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_send"
+        android:clickable="true" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/amber_700"
+        app:elevation="2.0dip"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_action_name"
+       android:layout_gravity="center|bottom"
+
+        app:useCompatPadding="true" />
+
+
+
+</FrameLayout>

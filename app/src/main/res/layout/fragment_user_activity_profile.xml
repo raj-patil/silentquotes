@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:fitsSystemWindows="true"
+    android:backgroundTint="@color/quantum_black_500"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/quantum_black_100"
+        >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:backgroundTint="@color/quantum_black_500">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_marginRight="@dimen/spacing_large">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textStyle="bold" android:textColor="@color/amber_800" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status" />
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:textColor="@color/quantum_white_text" style="@style/TextAppearance.Subhead.Bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_middle" android:text="@string/middle_lorem_ipsum" android:lineSpacingExtra="2.0dip" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/spacing_mlarge" />
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/spacing_mlarge" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_Activity_recycler_view"
+        android:background="@color/mdtp_light_gray"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

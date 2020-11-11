@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. Created By Raj Patil
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FontSize"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.Subhead.Bold"
+        android:layout_gravity="center"
+        ></TextView>
+
+    <SeekBar
+        android:id="@+id/fontsizeeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OverLay"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.Subhead.Bold"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+    <Switch
+        android:id="@+id/overLaySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="50dp"
+        android:text="OverLay:  "
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <SeekBar
+        android:id="@+id/overLaySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vignette Effect"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.Subhead.Bold"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+    <Switch
+        android:id="@+id/vignetterSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="50dp"
+        android:text="Vignette:  "
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <SeekBar
+        android:id="@+id/VignetteSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brightness"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.Subhead.Bold"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+    <Switch
+        android:id="@+id/brightnessSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="50dp"
+        android:text="Brightness:  "
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <SeekBar
+        android:id="@+id/brightnessseeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturation"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.Subhead.Bold"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+    <Switch
+        android:id="@+id/adjustSaturationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="50dp"
+        android:text="Saturation:  "
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <SeekBar
+        android:id="@+id/adjustSaturationSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Border"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.Subhead.Bold"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+    <Switch
+        android:id="@+id/borderLayoutSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="50dp"
+        android:text="Saturation:  "
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <SeekBar
+        android:id="@+id/borderLayoutSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+
+
+
+
+</LinearLayout>

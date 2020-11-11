@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/intrinsic_padding"
+    android:paddingRight="@dimen/intrinsic_padding"
+    android:paddingTop="@dimen/intrinsic_padding">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="@dimen/post_card_elevation"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/postImageView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginBottom="@dimen/intrinsic_padding"
+                android:visibility="gone"
+                android:src="@drawable/photo_male_4"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/postImageView1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+               android:src="@color/transparent"
+                android:layout_marginBottom="@dimen/intrinsic_padding"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/postImageView"
+                android:scaleType="centerCrop" />
+
+            <com.silentquot.socialcomponents.views.CircularImageView
+                android:id="@+id/authorImageView"
+                android:layout_width="@dimen/post_list_item_author_image_side"
+                android:layout_height="@dimen/post_list_item_author_image_side"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/postImageView1"
+                android:layout_alignTop="@+id/postImageView1"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                app:border="false"
+                app:shadow="true"
+                android:visibility="visible"
+                app:shadow_radius="@dimen/circle_image_shadow_radius"
+                app:shadow_color="@color/circle_image_shadow" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:paddingRight="0dp"
+                android:layout_marginBottom="@dimen/intrinsic_padding"
+                android:layout_below="@+id/postImageView1"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginTop="0dp"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:textAppearance="@style/TextAppearance.Title" />
+
+            <TextView
+                android:id="@+id/detailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:layout_below="@+id/titleTextView"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/authorImageView"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAppearance="@style/TextAppearance.Second"
+                android:layout_alignParentEnd="true" />
+
+            <include
+                android:id="@+id/countersContainer"
+                layout="@layout/counters_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailsTextView"
+                android:layout_marginLeft="@dimen/intrinsic_padding"
+                android:layout_marginRight="@dimen/intrinsic_padding" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

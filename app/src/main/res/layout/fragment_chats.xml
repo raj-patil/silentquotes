@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".Fragments.ChatsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/chatlist_item_list_view"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="20dp" />
+
+         <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        android:layout_marginStart="-2dp"
+        android:layout_above="@id/all_channel"
+        android:id="@+id/brodcast_recycler_view"
+        android:layout_marginBottom="-1dp">
+  </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/all_channel"
+        android:text="All Channels"
+        android:textColor="@color/amber_800"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/all_channel"
+        ></Button>
+
+
+
+</RelativeLayout>
